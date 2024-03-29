@@ -13,6 +13,26 @@
         android:theme="@style/Theme.GeorgeApp"
         tools:targetApi="31">
         <activity
+            android:name=".devoirVideActivity"
+            android:exported="false"
+            android:label="@string/title_activity_devoir_vide"
+            android:theme="@style/Theme.GeorgeApp" />
+        <activity
+            android:name=".AssignmentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_assignment"
+            android:theme="@style/Theme.GeorgeApp" />
+        <activity
+            android:name=".ExplorerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_explorer"
+            android:theme="@style/Theme.GeorgeApp" />
+        <activity
+            android:name=".DestinationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_destination"
+            android:theme="@style/Theme.GeorgeApp" />
+        <activity
             android:name=".FormActivity"
             android:exported="false"
             android:label="@string/title_activity_form"

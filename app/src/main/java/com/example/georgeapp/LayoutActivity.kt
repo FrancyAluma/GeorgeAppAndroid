@@ -93,8 +93,7 @@ fun Layout(){
                     Icon(imageVector = Icons.Default.Settings, contentDescription ="settings",
                         tint = Color.Black)
                 }
-
-
+                
             })
         // ending of TopAppbar
 

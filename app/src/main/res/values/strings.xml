@@ -3,4 +3,8 @@
     <string name="title_activity_layout">LayoutActivity</string>
     <string name="title_activity_intent">IntentActivity</string>
     <string name="title_activity_form">FormActivity</string>
+    <string name="title_activity_destination">DestinationActivity</string>
+    <string name="title_activity_explorer">ExplorerActivity</string>
+    <string name="title_activity_assignment">AssignmentActivity</string>
+    <string name="title_activity_devoir_vide">devoirVideActivity</string>
 </resources>

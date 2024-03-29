@@ -6,6 +6,7 @@ import android.provider.ContactsContract.CommonDataKinds.Email
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -41,6 +42,7 @@ import androidx.compose.ui.draw.paint
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.modifier.modifierLocalConsumer
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
@@ -71,6 +73,8 @@ fun MyForm () {
             )
             .verticalScroll(rememberScrollState())
     ) {
+
+        val mContext = LocalContext.current
 
         var firstname by remember {
             mutableStateOf("")
@@ -220,7 +224,10 @@ fun MyForm () {
             text = "Already have an account? Login ",
             fontSize = 25.sp ,
             fontWeight = FontWeight.Bold ,
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth()
+                .clickable {
+                    mContext.startActivity(Intent(mContext,DestinationActivity::class.java))
+                },
             textAlign = TextAlign.Center
         )
 
