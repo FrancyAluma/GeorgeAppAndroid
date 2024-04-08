@@ -205,7 +205,7 @@ fun MyForm () {
            contentAlignment = Alignment.Center
        ) {
            Button(onClick = { },
-               shape = RoundedCornerShape(5.dp),
+               shape = RoundedCornerShape(10.dp),
                colors = ButtonDefaults.buttonColors(Color.Blue),
                modifier = Modifier
                    .fillMaxWidth()

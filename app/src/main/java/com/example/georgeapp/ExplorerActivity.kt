@@ -567,6 +567,21 @@ fun Explore() {
             }
             // End of  Row2
 
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Button(onClick = {
+                mContext.startActivity(Intent(mContext,AssignmentActivity::class.java))
+            },
+                shape = RoundedCornerShape(5.dp),
+                colors = ButtonDefaults.buttonColors(Color.Red),
+            )
+            {
+                Text(text = "Suivant")
+                Icon(imageVector = Icons.Default.ArrowForward ,
+                    contentDescription = "suivant" )
+
+            }
+
 
 
         }

@@ -7,4 +7,8 @@
     <string name="title_activity_explorer">ExplorerActivity</string>
     <string name="title_activity_assignment">AssignmentActivity</string>
     <string name="title_activity_devoir_vide">devoirVideActivity</string>
+    <string name="title_activity_first_screen">FirstScreenActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_page1">Page1Activity</string>
+    <string name="title_activity_chaise">ChaiseActivity</string>
 </resources>
