@@ -50,7 +50,7 @@ class SplashActivity : ComponentActivity() {
             val mContext= LocalContext.current
             val coroutineScope = rememberCoroutineScope()
             coroutineScope.launch {
-                delay(7000)
+                delay(5000)
                 mContext.startActivity(Intent(mContext,MainActivity::class.java))
                 finish()
 
@@ -71,6 +71,7 @@ fun MySplash() {
         verticalArrangement = Arrangement.Center
     ) {
 
+        val mContext= LocalContext.current
         //Lottie Animation
         val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.snapchat))
         val progress by animateLottieCompositionAsState(composition)
@@ -90,7 +91,9 @@ fun MySplash() {
 
         Spacer(modifier = Modifier.height(5.dp))
 
-        Button(onClick = {},
+        Button(onClick = {
+            mContext.startActivity(Intent(mContext,Page1Activity::class.java))
+        },
             shape = RoundedCornerShape(5.dp),
             colors = ButtonDefaults.buttonColors(Color.White),
             modifier = Modifier
@@ -103,6 +106,9 @@ fun MySplash() {
                 fontSize = 25.sp,
                 fontWeight = FontWeight.Bold
             )
+
+
+
         }
 
 

@@ -213,43 +213,34 @@ fun Chaise () {
                    Spacer(modifier = Modifier.height(5.dp))
 
                    androidx.compose.material3.Text(
-                       text = "Colosseum" ,
+                       text = "Amos Chair" ,
                        fontSize = 20.sp ,
                        fontFamily = FontFamily.Serif ,
                        fontWeight = FontWeight.ExtraBold
                    )
                    Spacer(modifier = Modifier.height(5.dp))
 
-                   Row {
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
+                   Row (
+                   ) {
+                       Column {
+                           androidx.compose.material3.Text(
+                               text = "Les Chaises sont de"
+                                       ,
+                               fontSize = 10.sp ,
+                               fontFamily = FontFamily.Serif,
+                               color = Color.Gray
+                           )
+                           androidx.compose.material3.Text(
+                               text = "bonnes qualites"
+                               ,
+                               fontSize = 10.sp ,
+                               fontFamily = FontFamily.Serif,
+                               color = Color.Gray
+                           )
 
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
+
+                       }
                    }
-                   Spacer(modifier = Modifier.height(5.dp))
-
-                   androidx.compose.material3.Text(
-                       text = "443 reviews" ,
-                       fontSize = 15.sp ,
-                       fontFamily = FontFamily.Serif
-                   )
 
                    Spacer(modifier = Modifier.height(5.dp))
 
@@ -260,10 +251,10 @@ fun Chaise () {
                           fontFamily = FontFamily.Serif ,
                           fontWeight = FontWeight.ExtraBold,
                           color = Color.Black,
-                          modifier = Modifier.padding(end=90.dp)
+                          modifier = Modifier.padding(end=100.dp)
                       )
 
-                      Icon(imageVector = Icons.Default.ShoppingCart, contentDescription ="notification",
+                      Icon(imageVector = Icons.Default.ShoppingCart, contentDescription ="Panier d'achat",
                               tint = Color.Gray,)
 
 
@@ -273,7 +264,8 @@ fun Chaise () {
 // End of row1 part1
 
                Spacer(modifier = Modifier.width(15.dp))
-               //Raw1 part2
+
+               // row1 part2
                Column {
 
                    Card (
@@ -307,55 +299,56 @@ fun Chaise () {
                    Spacer(modifier = Modifier.height(5.dp))
 
                    androidx.compose.material3.Text(
-                       text = "Colosseum" ,
+                       text = "Amos Chair" ,
                        fontSize = 20.sp ,
                        fontFamily = FontFamily.Serif ,
                        fontWeight = FontWeight.ExtraBold
                    )
                    Spacer(modifier = Modifier.height(5.dp))
 
-                   Row {
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
+                   Row (
+                   ) {
+                       Column {
+                           androidx.compose.material3.Text(
+                               text = "Les Chaises sont de"
+                               ,
+                               fontSize = 10.sp ,
+                               fontFamily = FontFamily.Serif,
+                               color = Color.Gray
+                           )
+                           androidx.compose.material3.Text(
+                               text = "bonnes qualites"
+                               ,
+                               fontSize = 10.sp ,
+                               fontFamily = FontFamily.Serif,
+                               color = Color.Gray
+                           )
 
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
-                       Icon(imageVector = Icons.Default.Star,
-                           contentDescription ="star",
-                           tint = Color.Blue
-                       )
+
+                       }
                    }
-                   Spacer(modifier = Modifier.height(5.dp))
-
-                   androidx.compose.material3.Text(
-                       text = "443 reviews" ,
-                       fontSize = 15.sp ,
-                       fontFamily = FontFamily.Serif
-                   )
 
                    Spacer(modifier = Modifier.height(5.dp))
 
-                   androidx.compose.material3.Text(
-                       text = "From Ksh. 38900" ,
-                       fontSize = 15.sp ,
-                       fontFamily = FontFamily.Serif ,
-                       color = Color.Blue
-                   )
+                   Row {
+                       androidx.compose.material3.Text(
+                           text = "$680" ,
+                           fontSize = 22.sp ,
+                           fontFamily = FontFamily.Serif ,
+                           fontWeight = FontWeight.ExtraBold,
+                           color = Color.Black,
+                           modifier = Modifier.padding(end=100.dp)
+                       )
+
+                       Icon(imageVector = Icons.Default.ShoppingCart, contentDescription ="Panier d'achat",
+                           tint = Color.Gray,)
+
+
+                   }
 
                }
-               // End of row1 part2
+// End of row1 part2
+
            }
            // End of Row1
 

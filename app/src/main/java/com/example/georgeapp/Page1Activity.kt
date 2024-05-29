@@ -1,5 +1,6 @@
 package com.example.georgeapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -27,6 +28,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -53,6 +55,7 @@ fun Pageun() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center) {
 
+        val mContext= LocalContext.current
 
         Box (modifier = Modifier.fillMaxWidth(),
             contentAlignment = Alignment.Center) {
@@ -90,7 +93,9 @@ fun Pageun() {
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        Button(onClick = {},
+        Button(onClick = {
+            mContext.startActivity(Intent(mContext,ChaiseActivity::class.java))
+        },
             shape = RoundedCornerShape(20.dp),
             colors = ButtonDefaults.buttonColors(Color.Red),
             modifier = Modifier

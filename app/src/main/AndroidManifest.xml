@@ -13,9 +13,29 @@
         android:theme="@style/Theme.GeorgeApp"
         tools:targetApi="31">
         <activity
+            android:name=".EmployeesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_employees"
+            android:theme="@style/Theme.GeorgeApp" />
+        <activity
+            android:name=".EmployeeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_employee"
+            android:theme="@style/Theme.GeorgeApp" />
+        <activity
             android:name=".ChaiseActivity"
             android:exported="false"
             android:label="@string/title_activity_chaise"
+            android:theme="@style/Theme.GeorgeApp" />
+        <activity
+            android:name=".AddDetailsActivity"
+            android:exported="false"
+            android:label="AddDetailsActivity"
+            android:theme="@style/Theme.GeorgeApp" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:label="DetailsActivity"
             android:theme="@style/Theme.GeorgeApp" />
         <activity
             android:name=".Page1Activity"

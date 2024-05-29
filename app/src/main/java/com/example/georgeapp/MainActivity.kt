@@ -2,10 +2,13 @@ package com.example.georgeapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ProgressBar
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -87,7 +90,8 @@ fun Text(){
 
        androidx.compose.material3.Text(text = "1.Kotlin")
        androidx.compose.material3.Text(text = "2.Java")
-       androidx.compose.material3.Text(text = "3.Python")
+       androidx.compose.material3.Text(
+           text = "3.Python")
 
        Spacer(modifier = Modifier.height(20.dp))
 
@@ -162,7 +166,14 @@ fun Text(){
       }
        Spacer(modifier = Modifier.height(15.dp))
 
-       Button(onClick = { /*TODO*/ },
+
+       Button(onClick = {
+
+           mContext.startActivity(Intent(mContext,AddDetailsActivity::class.java))
+           Toast.makeText(mContext, "Entrez Vos Details", Toast.LENGTH_LONG)
+               .show()
+
+       },
            shape = RoundedCornerShape(5.dp),
            colors = ButtonDefaults.buttonColors(Color.Blue),
            modifier = Modifier

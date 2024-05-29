@@ -135,7 +135,7 @@ fun MyIntents () {
         Spacer(modifier = Modifier.height(20.dp))
 
         //SMS
-        OutlinedIconButton(
+                      OutlinedIconButton(
             onClick = {
                 val smsIntent=Intent(Intent.ACTION_SENDTO)
                 smsIntent.data="smsto:0720245837".toUri()

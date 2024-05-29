@@ -103,7 +103,6 @@ fun Assign () {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(5.dp)
-                    .background(Color.LightGray)
 
             ){
                 Image(painter = painterResource(id = R.drawable.ima1),

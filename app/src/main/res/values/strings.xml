@@ -11,4 +11,7 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_page1">Page1Activity</string>
     <string name="title_activity_chaise">ChaiseActivity</string>
+    <string name="title_activity_employee">EmployeeActivity</string>
+    <string name="title_activity_employees">EmployeesActivity</string>
+    <string name="title_activity_progress_bar">ProgressBarActivity</string>
 </resources>

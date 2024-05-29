@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464419307616",
+    "project_id": "georgevraiapp",
+    "storage_bucket": "georgevraiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464419307616:android:fa106e0be80cdffa6cc305",
+        "android_client_info": {
+          "package_name": "com.example.georgeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd2yPGpBzWEsLen1WQ7pfhOYTJgPEWld8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
